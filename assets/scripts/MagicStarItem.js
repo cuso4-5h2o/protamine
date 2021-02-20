@@ -44,7 +44,7 @@ cc.Class({
     },
     purchase() {
         cc.find("Canvas").addChild(cc.instantiate(this.toastPrefab));
-        purchaseNode = cc.instantiate(this.purchasePrefab);
+        var purchaseNode = cc.instantiate(this.purchasePrefab);
         cc.find("Canvas").addChild(purchaseNode);
         purchaseNode.getComponent("MagicStarPurchase").init({
             id: this.magicStarId,

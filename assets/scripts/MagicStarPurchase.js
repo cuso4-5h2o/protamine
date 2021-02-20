@@ -21,7 +21,7 @@ cc.Class({
     init(data) {
         this.magicStarId = data.id;
         this.itemNode = data.itemNode;
-        this.titleLabel.string = this.titleLabel.string.replace("{action}", ((Global.magicStars[this.magicStarId] >= 0) ? "upgrade" : "purchase")).replace("{name}", data.name);
+        this.titleLabel.string = this.titleLabel.string.replace("{action}", ((Global.magicStars[this.magicStarId] >= 0) ? "Upgrade" : "Purchase")).replace("{name}", data.name);
         var cost = Global.magicStars[this.magicStarId] >= 0 ? Costs[Global.magicStars[this.magicStarId]] : 5;
         this.purchaseLabel.string = (Global.magicStars[this.magicStarId] >= 0) ? "Upgrade" : "Purchase";
         this.levelLabel.string = (Global.magicStars[this.magicStarId] >= 0) ? (Global.magicStars[this.magicStarId] + 1).toString() : "0";
