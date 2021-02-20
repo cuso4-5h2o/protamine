@@ -1,0 +1,51 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "ball-come",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 1,
+  "sample": 60,
+  "speed": 10,
+  "wrapMode": 1,
+  "curveData": {
+    "props": {
+      "position": [
+        {
+          "frame": 0,
+          "value": [
+            -340,
+            171
+          ],
+          "motionPath": [
+            [
+              -193,
+              239,
+              -239,
+              324,
+              -157,
+              173
+            ]
+          ]
+        },
+        {
+          "frame": 1,
+          "value": [
+            -149,
+            16
+          ]
+        }
+      ],
+      "opacity": [
+        {
+          "frame": 0,
+          "value": 25
+        },
+        {
+          "frame": 0.75,
+          "value": 255
+        }
+      ]
+    }
+  },
+  "events": []
+}
