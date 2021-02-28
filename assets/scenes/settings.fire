@@ -2777,7 +2777,7 @@
     "component": "",
     "_componentId": "46179npralIiq8UdWsN7J4m",
     "handler": "onChecked",
-    "customEventData": "enableDayNight"
+    "customEventData": "dayNight"
   },
   {
     "__type__": "cc.Node",
@@ -3284,7 +3284,7 @@
     "component": "",
     "_componentId": "46179npralIiq8UdWsN7J4m",
     "handler": "onChecked",
-    "customEventData": "enableParticle"
+    "customEventData": "particle"
   },
   {
     "__type__": "cc.Node",
@@ -3791,7 +3791,7 @@
     "component": "",
     "_componentId": "46179npralIiq8UdWsN7J4m",
     "handler": "onChecked",
-    "customEventData": "enableRotation"
+    "customEventData": "rotation"
   },
   {
     "__type__": "cc.Node",
@@ -4069,21 +4069,21 @@
   },
   {
     "__type__": "labeledToggle",
-    "name": "enableDayNight",
+    "name": "dayNight",
     "toggle": {
       "__id__": 57
     }
   },
   {
     "__type__": "labeledToggle",
-    "name": "enableParticle",
+    "name": "particle",
     "toggle": {
       "__id__": 67
     }
   },
   {
     "__type__": "labeledToggle",
-    "name": "enableRotation",
+    "name": "rotation",
     "toggle": {
       "__id__": 77
     }

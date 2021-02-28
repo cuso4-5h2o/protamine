@@ -1,15 +1,15 @@
 module.exports = {
     project: {
-        version: "1.0.0",
+        version: "1.0.1",
         homePage: "https://github.com/cuso4-5h2o/protamine"
     },
     settings: cc.sys.localStorage.getItem("settings") ? JSON.parse(cc.sys.localStorage.getItem("settings")) : {
         speed: 1,
         volume: 0.5,
         enable: {
-            enableDayNight: true,
-            enableParticle: true,
-            enableRotation: true,
+            dayNight: true,
+            particle: true,
+            rotation: true,
         }
     },
     fragments: cc.sys.localStorage.getItem("fragments") ? parseInt(cc.sys.localStorage.getItem("fragments")) : 0,

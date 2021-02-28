@@ -317,7 +317,7 @@
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 576,
-      "height": 78.24
+      "height": 30.240000000000002
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -329,7 +329,7 @@
       "ctor": "Float64Array",
       "array": [
         0,
-        284.8,
+        324.88,
         0,
         0,
         0,
@@ -368,8 +368,8 @@
     ],
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
-    "_string": "At the end of each playing, every 10,000 points can be converted into 1 fragment. Items exchanged for fragments will appear during the game. ",
-    "_N$string": "At the end of each playing, every 10,000 points can be converted into 1 fragment. Items exchanged for fragments will appear during the game. ",
+    "_string": "Items exchanged for fragments will appear during the game. ",
+    "_N$string": "Items exchanged for fragments will appear during the game. ",
     "_fontSize": 20,
     "_lineHeight": 24,
     "_enableWrapText": true,
@@ -399,7 +399,7 @@
     "_alignFlags": 41,
     "_left": 32,
     "_right": 32,
-    "_top": 156.07999999999998,
+    "_top": 140,
     "_bottom": 0,
     "_verticalCenter": 0,
     "_horizontalCenter": 0,
@@ -1087,7 +1087,7 @@
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 576,
-      "height": 678
+      "height": 700
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -1099,7 +1099,7 @@
       "ctor": "Float64Array",
       "array": [
         0,
-        -109,
+        -110,
         0,
         0,
         0,
@@ -1133,11 +1133,11 @@
     "_enabled": true,
     "alignMode": 0,
     "_target": null,
-    "_alignFlags": 45,
+    "_alignFlags": 40,
     "_left": 32,
     "_right": 32,
-    "_top": 250,
-    "_bottom": 32,
+    "_top": 528,
+    "_bottom": 432,
     "_verticalCenter": 0,
     "_horizontalCenter": 0,
     "_isAbsLeft": true,
@@ -1161,7 +1161,7 @@
     "_layoutSize": {
       "__type__": "cc.Size",
       "width": 576,
-      "height": 678
+      "height": 700
     },
     "_resize": 0,
     "_N$layoutType": 2,
@@ -1229,7 +1229,7 @@
       "b": 255,
       "a": 255
     },
-    "magicStarDescription": "Destroy the picked cross. Upgrades make the duration of the effect longer."
+    "magicStarDescription": "Destroy picked crosses. Upgrades make the duration of the effect longer."
   },
   {
     "__type__": "MagicStar",
@@ -1242,7 +1242,7 @@
       "b": 0,
       "a": 255
     },
-    "magicStarDescription": "Double the score of the stars. For each level up, the multiple will be increased by one."
+    "magicStarDescription": "Double the value of all stars.The multiplier increases by one each time you upgrade."
   },
   {
     "__type__": "MagicStar",
@@ -1255,7 +1255,7 @@
       "b": 0,
       "a": 255
     },
-    "magicStarDescription": "Double the game speed and make the cross disappear. Upgrades make the duration of the effect longer."
+    "magicStarDescription": "Double the game speed and make crosses disappear. Upgrades make the duration of the effect longer."
   },
   {
     "__type__": "MagicStar",
@@ -1268,7 +1268,7 @@
       "b": 0,
       "a": 255
     },
-    "magicStarDescription": "Increase the size of the ball. For each level up, the multiple will be increased by one. Only appear at night."
+    "magicStarDescription": "Increase the size of the ball. The multiplier increases by one each time you upgrade. Only appear at night."
   },
   {
     "__type__": "cc.Canvas",

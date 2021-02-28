@@ -40,7 +40,7 @@ cc.Class({
             default:
                 this.isActived = true;
         }
-        if (this.isRotatable && Global.settings.enable.enableRotation) this.node.angle--;
+        if (this.isRotatable && Global.settings.enable.rotation) this.node.angle--;
         if (this.isCanceled) {
             this.node.y -= 6;
             if (this.node.y <= -500) {
@@ -128,7 +128,7 @@ cc.Class({
                 cc.audioEngine.play(this.magicStarAudio, false, Global.settings.volume);
                 Global.speedPlaying *= 1.5;
                 Global.magicStarStatuses.red = 10 + Global.magicStars.red * 5;
-                if (!Global.particleNode && Global.settings.enable.enableParticle) {
+                if (!Global.particleNode && Global.settings.enable.particle) {
                     Global.particleNode = cc.instantiate(this.particlePrefab);
                     var ballNode = cc.find("Canvas/Ball");
                     ballNode.addChild(Global.particleNode);

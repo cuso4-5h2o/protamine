@@ -13,6 +13,12 @@ cc.Class({
             alert("This is a portrait game, please rotate your device.\nIf you like to play on a computer with a landscape screen, you may consider using developer tools to simulate mobile devices.");
             location.reload();
         }
+        if ('enableDayNight' in Global.settings.enable) {
+            Global.settings.enable.dayNight = Global.settings.enable.enableDayNight;
+            Global.settings.enable.particle = Global.settings.enable.enableParticle;
+            Global.settings.enable.rotation = Global.settings.enable.enableRotation;
+            Global.saveData();
+        }
         this.yMin = Math.random() * 960 - 480;
         this.yMax = Math.random() * 960 - 480;
         Global.ballPosition = this.ballNode.position;
@@ -46,7 +52,7 @@ cc.Class({
     update() {
         if (Global.isClimbing) {
             this.ballNode.y += 6;
-            if (this.ballSprite.node.angle <= 10 && Global.settings.enable.enableRotation) this.ballSprite.node.angle++;
+            if (this.ballSprite.node.angle <= 10 && Global.settings.enable.rotation) this.ballSprite.node.angle++;
             if (this.ballNode.y >= this.yMax) {
                 Global.isClimbing = false;
                 this.yMax = Math.random() * 960 - 480;
@@ -54,7 +60,7 @@ cc.Class({
         }
         else {
             this.ballNode.y -= 6;
-            if (this.ballSprite.node.angle >= 10 && Global.settings.enable.enableRotation) this.ballSprite.node.angle--;
+            if (this.ballSprite.node.angle >= 10 && Global.settings.enable.rotation) this.ballSprite.node.angle--;
             if (this.ballNode.y <= this.yMin) {
                 Global.isClimbing = true;
                 this.yMin = Math.random() * 960 - 480;

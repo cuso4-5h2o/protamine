@@ -156,11 +156,11 @@ cc.Class({
         }
     },
     update() {
-        if (this.isDay && Math.floor(Global.score / 10000) % 2 == 1 && Global.settings.enable.enableDayNight) {
+        if (this.isDay && Math.floor(Global.score / 10000) % 2 == 1 && Global.settings.enable.dayNight) {
             this.isDay = false;
             this.backgroundNode.getComponent(cc.Animation).play("to-night");
         }
-        if (!this.isDay && Math.floor(Global.score / 10000) % 2 == 0 && Global.settings.enable.enableDayNight) {
+        if (!this.isDay && Math.floor(Global.score / 10000) % 2 == 0 && Global.settings.enable.dayNight) {
             this.isDay = true;
             this.backgroundNode.getComponent(cc.Animation).play("to-day");
         }

@@ -998,6 +998,12 @@
       "__id__": 18
     },
     "_enabled": true,
+    "toastPrefab": {
+      "__uuid__": "e942d872-afd4-4cfc-aa90-8ba06930afe3"
+    },
+    "guidePrefab": {
+      "__uuid__": "e8d35753-8631-4e33-847a-addc43f96ceb"
+    },
     "_id": ""
   },
   {

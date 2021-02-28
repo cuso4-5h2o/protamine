@@ -64,9 +64,9 @@ cc.Class({
             speed: 1,
             volume: 0.5,
             enable: {
-                enableDayNight: true,
-                enableParticle: true,
-                enableRotation: true,
+                dayNight: true,
+                particle: true,
+                rotation: true,
             }
         };
         Global.saveData();

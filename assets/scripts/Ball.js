@@ -24,7 +24,7 @@ cc.Class({
             if (Global.isClimbing) {
                 if (Global.speedClimbing > 0.2) Global.speedClimbing /= 1.02;
                 this.node.y += this.speedClimbing * Global.speedClimbing * (1 + Global.settings.speed);
-                if (this.ballSprite.node.angle <= 40 && Global.settings.enable.enableRotation) this.ballSprite.node.angle++;
+                if (this.ballSprite.node.angle <= 40 && Global.settings.enable.rotation) this.ballSprite.node.angle++;
                 if (!this.isClimbingAudioPlaying) {
                     this.climbingAudioHandle = cc.audioEngine.play(this.climbingAudio, true, Global.settings.volume / 1.5);
                     this.isClimbingAudioPlaying = true;
@@ -33,7 +33,7 @@ cc.Class({
             else {
                 if (Global.speedClimbing < 2) Global.speedClimbing *= 1.02;
                 this.node.y -= this.speedFalling * Global.speedClimbing * (1 + Global.settings.speed);
-                if (this.ballSprite.node.angle >= -40 && Global.settings.enable.enableRotation) this.ballSprite.node.angle--;
+                if (this.ballSprite.node.angle >= -40 && Global.settings.enable.rotation) this.ballSprite.node.angle--;
                 if (this.isClimbingAudioPlaying) {
                     cc.audioEngine.stop(this.climbingAudioHandle);
                     this.isClimbingAudioPlaying = false;
