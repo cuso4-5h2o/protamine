@@ -1242,7 +1242,7 @@
       "b": 0,
       "a": 255
     },
-    "magicStarDescription": "Double the value of all stars.The multiplier increases by one each time you upgrade."
+    "magicStarDescription": "Double the value of all stars. The multiplier increases by one each time you upgrade."
   },
   {
     "__type__": "MagicStar",
